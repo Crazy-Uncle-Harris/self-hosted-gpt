@@ -263,6 +263,16 @@ function overContextLimit(model: string, tokens: number) {
     case Constants.GPT_4: max = Constants.GPT_4_MAX_TOKENS; break;
     case Constants.GPT_4_TURBO: max = Constants.GPT_4_TURBO_MAX_TOKENS; break;
     case Constants.GPT_4_OMNI: max = Constants.GPT_4_OMNI_MAX_TOKENS; break;
+    // GPT-4.1 Family
+    case Constants.GPT_4_1: max = Constants.GPT_4_1_MAX_TOKENS; break;
+    case Constants.GPT_4_1_MINI: max = Constants.GPT_4_1_MINI_MAX_TOKENS; break;
+    case Constants.GPT_4_1_NANO: max = Constants.GPT_4_1_NANO_MAX_TOKENS; break;
+    // o-Series Models
+    case Constants.O1: max = Constants.O1_MAX_TOKENS; break;
+    case Constants.O1_MINI: max = Constants.O1_MINI_MAX_TOKENS; break;
+    case Constants.O3: max = Constants.O3_MAX_TOKENS; break;
+    case Constants.O3_MINI: max = Constants.O3_MINI_MAX_TOKENS; break;
+    case Constants.O4_MINI: max = Constants.O4_MINI_MAX_TOKENS; break;
     default:
   }
 
